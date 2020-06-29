@@ -1,3 +1,0 @@
-/home/notpyxl/UTEC/undergraduate/7th/ai/week11/neural_network/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/notpyxl/UTEC/undergraduate/7th/ai/week11/neural_network/cmake-build-debug/CMakeFiles/neural_network.dir
-/home/notpyxl/UTEC/undergraduate/7th/ai/week11/neural_network/cmake-build-debug/CMakeFiles/edit_cache.dir

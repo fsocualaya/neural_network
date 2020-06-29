@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/neural_network.dir/src/main.cpp.o CMakeFiles/neural_network.dir/src/Perceptron.cpp.o CMakeFiles/neural_network.dir/src/NeuralNetwork.cpp.o CMakeFiles/neural_network.dir/src/dataframe.cpp.o  -o neural_network 

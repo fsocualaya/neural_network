@@ -1,0 +1,39 @@
+--- IRIS DATASET, REDUCIDO ---
+Un dataset clasico para clasificar diferentes especies de flores Iris, que hemos reducido para hacerlo mas facil de usar.
+
+*petal_length_cm: longitud del petalo, en cm
+*petal_width_cm: ancho del petalo, en cm
+*class: especie de iris.
+	0 = Iris-setosa
+	1 = Iris-versicolor
+
+Hemos removido la especie 'Iris-virginica' y las dos columnas 'sepal_length_cm' y 'sepal_width_cm' para tener un dataset de 2 features y 2 clases linealmente separables.
+
+El dataset reducido es 'Iris-reducido.csv'
+
+
+--------------------------------
+
+
+--- DATASET ESTRELLAS VARIABLES ---
+El segundo dataset que vamos a utilizar es un dataset que contiene observaciones de varias estrellas 'variables' - es decir, estrellas cuya luz varía periódicamente, haciendose mas y menos brillantes, en ciclos periódicos y regulares. El paper científico de donde sale esta data, si es que les interesa, se encuentra aqui: https://academic.oup.com/mnras/article/358/1/30/1036786 . La hemos reducido a 4 features y 2 clases.
+
+* period: El periodo de variación de la brillantez de la estrella. En cuantos dias hace un ciclo entero de variación?
+* amplitude: La amplitud/fuerza de la señal variante. Que tan fuerte es la variacion de brillantez entre su maximo y minimo?
+
+Las siguientes 2 variables son un poco mas dificiles de explicar. La idea es que cada estrella no tiene /un/ solo periodo de variacion, sino que su señal total de luz se puede descomponer en diferentes señales armónicas periódicas de diferentes potencias. Si no se entiende eso, no importa mucho, con tal que la data sea utilizable.
+
+* R21: El ratio entre la magnitud de la segunda y la primera señal periódica - que tan fuerte es la segunda señal mas potente en contraste a la primera?
+* phase_dif: La diferencia de fase entre la segunda y primera señal periódica - que tan separada en tiempo periodico es la segunda señal mas potente en contraste a la primera?
+
+* class: La clase de estrella. En el dataset original son 9 clases, que hemos combinado para reducirlas a 2.
+	0 = binaria eclíptica
+	1 = no binaria eclíptica
+
+Que es una binaria eclíptica? En estos casos, se cree que la 'estrella' esta variando en brillantez porque en realidad no es /una/ estrella, sino 2 estrellas en un orbite binario, y cuando una estrella eclipsea la otra, la brillantez total que llega a la Tierra se reduce (porque una estrella esta tapando la otra!). Si quieren mas informacion, lean https://es.wikipedia.org/wiki/Estrella_binaria#Binarias_eclipsantes, o simplemente miren https://en.wikipedia.org/wiki/File:Artist%E2%80%99s_impression_of_eclipsing_binary.ogv).
+
+En teoria, este dataset se puede usar para categorizar cualquier combinacion de las 9 clases que deseen del dataset original.
+
+NOTA: Si quieren poner el periodo ('period') o la amplitud ('amplitude') en un grafo o una figura, les recomendo que estas variables esten mostradas en escala logaritmica para que se vea mejor - no deberia afectar el algoritmo en si. Las otras 2 variables no necesitan este tratamiento.
+
+El dataset reducido es 'estrellas-variables.csv'
